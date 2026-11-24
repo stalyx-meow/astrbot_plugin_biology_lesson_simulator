@@ -1,0 +1,160 @@
+{
+  "initial_score": {
+    "description": "初始生物成绩",
+    "type": "int",
+    "default": 50,
+    "hint": "仅对新玩家生效，范围 0～100。"
+  },
+  "daily_score_decay": {
+    "description": "每日基础扣分",
+    "type": "int",
+    "default": 1,
+    "hint": "从注册后的下一天开始扣分，离线天数也计入。最低扣到 0 分，填 0 可关闭。"
+  },
+  "max_energy": {
+    "description": "精力上限和每日恢复值",
+    "type": "int",
+    "default": 100,
+    "hint": "北京时间零点恢复至此值，至少为 1。"
+  },
+  "daily_classes": {
+    "description": "每天最多上课节数",
+    "type": "int",
+    "default": 3,
+    "hint": "填 0 可暂停开课。"
+  },
+  "class_minutes": {
+    "description": "每节课时长（分钟）",
+    "type": "int",
+    "default": 45,
+    "hint": "至少为 1，仅影响之后开始的课。"
+  },
+  "answer_cost": {
+    "description": "每次答题消耗的精力",
+    "type": "int",
+    "default": 10,
+    "hint": "首次答题和重答使用同一消耗。"
+  },
+  "answer_percent": {
+    "description": "答对概率（%）",
+    "type": "float",
+    "default": 65,
+    "hint": "例如填 65 表示 65%。填 0 时无法答对。",
+    "slider": {
+      "min": 0,
+      "max": 100,
+      "step": 0.1
+    }
+  },
+  "answer_points": {
+    "description": "答对后增加的成绩",
+    "type": "int",
+    "default": 3
+  },
+  "nap_energy": {
+    "description": "睡觉恢复的精力",
+    "type": "int",
+    "default": 25,
+    "hint": "最多恢复至精力上限。"
+  },
+  "dictation_cost": {
+    "description": "每次默写消耗的精力",
+    "type": "int",
+    "default": 15,
+    "hint": "首次默写和重默使用同一消耗。"
+  },
+  "dictation_percent": {
+    "description": "默写过关概率（%）",
+    "type": "float",
+    "default": 70,
+    "hint": "填 0 时无法过关。",
+    "slider": {
+      "min": 0,
+      "max": 100,
+      "step": 0.1
+    }
+  },
+  "dictation_points": {
+    "description": "默写过关增加的成绩",
+    "type": "int",
+    "default": 4
+  },
+  "dictation_homework": {
+    "description": "默写过关奖励作业份数",
+    "type": "int",
+    "default": 1,
+    "hint": "填 0 可关闭此奖励。"
+  },
+  "bonus_days": {
+    "description": "「红利」持续天数",
+    "type": "int",
+    "default": 45,
+    "hint": "含签约当天，至少为 1，仅影响之后签订的协议。"
+  },
+  "bonus_points": {
+    "description": "「红利」每天增加的成绩",
+    "type": "int",
+    "default": 2,
+    "hint": "仅影响之后签订的协议。"
+  },
+  "steal_cost": {
+    "description": "每次偷试卷消耗的精力",
+    "type": "int",
+    "default": 5
+  },
+  "steal_percent": {
+    "description": "偷到试卷的概率（%）",
+    "type": "float",
+    "default": 60,
+    "hint": "剩余概率为被发现。",
+    "slider": {
+      "min": 0,
+      "max": 100,
+      "step": 0.1
+    }
+  },
+  "daily_homework": {
+    "description": "每日作业发放份数",
+    "type": "int",
+    "default": 1,
+    "hint": "手上作业全部清空时发放，填 0 可关闭每日发放。"
+  },
+  "homework_cost": {
+    "description": "独立完成一份作业消耗的精力",
+    "type": "int",
+    "default": 20
+  },
+  "homework_points": {
+    "description": "独立完成一份作业增加的成绩",
+    "type": "int",
+    "default": 3
+  },
+  "copy_cost": {
+    "description": "抄一份作业消耗的精力",
+    "type": "int",
+    "default": 5
+  },
+  "copy_penalty_percent": {
+    "description": "抄作业触发「同」的概率（%）",
+    "type": "float",
+    "default": 30,
+    "hint": "填 0 可关闭「同」。",
+    "slider": {
+      "min": 0,
+      "max": 100,
+      "step": 0.1
+    }
+  },
+  "copy_penalty_days": {
+    "description": "「同」持续天数",
+    "type": "int",
+    "default": 5,
+    "hint": "含触发当天，至少为 1，仅影响之后触发的效果。"
+  },
+  "quotes": {
+    "description": "自定义每日金句",
+    "type": "list",
+    "default": [],
+    "hint": "每项填写一句，留空时使用内置金句。"
+  }
+}

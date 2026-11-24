@@ -1,0 +1,7 @@
+name: astrbot_plugin_biology_lesson_simulator
+display_name: 生物课模拟器
+desc: 模拟上生物课、默写和写作业的聊天游戏，附带每日金句。
+version: v1.2.0
+author: stalyx
+astrbot_version: ">=4.9.2"
+repo: https://github.com/stalyx-meow/astrbot_plugin_biology_lesson_simulator
