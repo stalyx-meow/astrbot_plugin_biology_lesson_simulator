@@ -95,3 +95,7 @@ git clone https://github.com/stalyx-meow/astrbot_plugin_biology_lesson_simulator
 - **存档位置**：`data/plugin_data/astrbot_plugin_biology_lesson_simulator/players.sqlite3`。同一 AstrBot 平台实例中的同一账号，在群聊和私聊共用进度。
 - **指令无响应**：确认插件已启用、当前聊天使用的 AstrBot 配置允许此插件，并使用正确的唤醒前缀。可以用 `/help` 查看已启用的指令。
 - **配置未生效**：确认修改的是当前运行实例的插件设置，保存后重载，再用 `/生物状态` 检查。
+
+## 许可证
+
+本项目采用 GNU Affero General Public License v3.0（`AGPL-3.0-only`）。完整条款见 [LICENSE](LICENSE)。
